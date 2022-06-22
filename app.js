@@ -70,7 +70,8 @@ function handleData(vm) {
       // }, []);
       // vm.list = reduceData;
 
-      vm.list = result.data;
+      let data = result.data.reverse(); // 倒轉 array，符合時間順序
+      vm.list = data;
     }
   });
 }
