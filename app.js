@@ -31,6 +31,14 @@ var app = Vue.createApp({
   },
 
   methods: {
+    transformDate(date) {
+      if (! date) {
+        return '';
+      }
+
+      return date.substring(0, date.indexOf(' '));
+    },
+
     modalToggle(index) {
       this.openedItem = index !== undefined
                       ? this.list[index]
