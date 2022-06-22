@@ -90,7 +90,7 @@
   <section id="app" v-cloak>
 
     <ul class="divide-y">
-      <li v-for="(item, index) in list" class="py-3 px-5 odd:bg-white even:bg-slate-100/60" :key="index" @click.prevent="modalToggle(index)">
+      <li v-for="(item, index) in list" class="py-3.5 px-5 odd:bg-white even:bg-slate-100/60" :key="index" @click.prevent="modalToggle(index)">
         <h2 class="flex items-center justify-between gap-x-2.5 font-normal">
           <a href="#" class="text-gray-800 text-[1.04rem]">{{ item['主旨'] }}</a>
           <span class="text-[13px] text-gray-500/90 mb-0">{{ transformDate(item['時間戳記']) }}</span>
